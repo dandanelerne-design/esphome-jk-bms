@@ -14,7 +14,7 @@ esphome:
     version: 2.3.0
 
 esp32:
-  board: wemos_d1_mini32
+  board: esp32dev
   framework:
     type: esp-idf
 
@@ -32,13 +32,6 @@ ota:
 logger:
   level: DEBUG
 
-# If you use Home Assistant please remove this `mqtt` section and uncomment the `api` component!
-# The native API has many advantages over MQTT: https://esphome.io/components/api.html#advantages-over-mqtt
-mqtt:
-  broker: !secret mqtt_host
-  username: !secret mqtt_username
-  password: !secret mqtt_password
-  id: mqtt_client
 
 # api:
 

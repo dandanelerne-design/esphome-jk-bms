@@ -14,7 +14,7 @@ esphome:
     version: 2.3.0
 
 esp32:
-  board: esp32
+  board: esp32dev
   framework:
     type: esp-idf
 

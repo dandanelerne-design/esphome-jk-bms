@@ -1,7 +1,7 @@
 substitutions:
   name: jk-bms
   device_description: "Monitor a JK-BMS using the GPS port (UART-TTL)"
-  external_components_source: github://syssi/esphome-jk-bms@main
+  external_components_source: https://github.com/dandanelerne-design/esphome-jk-bms.git
   tx_pin: GPIO16
   rx_pin: GPIO17
 
@@ -14,7 +14,7 @@ esphome:
     version: 2.3.0
 
 esp32:
-  board: wemos_d1_mini32
+  board: esp32
   framework:
     type: esp-idf
 
